@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "UbuntuMono Nerd Font:pixelsize=16:antialias=true:autohint=true";
+static char *font = "UbuntuMono Nerd Font:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -101,29 +101,29 @@ float alpha = 0.8;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#040A33", /* black   */
-  [1] = "#C1355D", /* red     */
-  [2] = "#396087", /* green   */
-  [3] = "#467090", /* yellow  */
-  [4] = "#2B7DF6", /* blue    */
-  [5] = "#3FBCA8", /* magenta */
-  [6] = "#4B9E9D", /* cyan    */
-  [7] = "#a2e9d0", /* white   */
+  [0] = "#040404", /* black   */
+  [1] = "#575757", /* red     */
+  [2] = "#676767", /* green   */
+  [3] = "#777777", /* yellow  */
+  [4] = "#8E8E8E", /* blue    */
+  [5] = "#B0B0B0", /* magenta */
+  [6] = "#C8C8C8", /* cyan    */
+  [7] = "#e3e3e3", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#71a391",  /* black   */
-  [9]  = "#C1355D",  /* red     */
-  [10] = "#396087", /* green   */
-  [11] = "#467090", /* yellow  */
-  [12] = "#2B7DF6", /* blue    */
-  [13] = "#3FBCA8", /* magenta */
-  [14] = "#4B9E9D", /* cyan    */
-  [15] = "#a2e9d0", /* white   */
+  [8]  = "#9e9e9e",  /* black   */
+  [9]  = "#575757",  /* red     */
+  [10] = "#676767", /* green   */
+  [11] = "#777777", /* yellow  */
+  [12] = "#8E8E8E", /* blue    */
+  [13] = "#B0B0B0", /* magenta */
+  [14] = "#C8C8C8", /* cyan    */
+  [15] = "#e3e3e3", /* white   */
 
   /* special colors */
-  [256] = "#040A33", /* background */
-  [257] = "#a2e9d0", /* foreground */
-  [258] = "#a2e9d0",     /* cursor */
+  [256] = "#040404", /* background */
+  [257] = "#e3e3e3", /* foreground */
+  [258] = "#e3e3e3",     /* cursor */
 };
 
 
