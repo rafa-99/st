@@ -98,7 +98,7 @@ unsigned int tabspaces = 8;
 float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
-#include "colors.c"
+#include "colors.h"
 
 /*
  * Default colors (colorname index)
