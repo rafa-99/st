@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono Nerd Font:size=10:antialias=true:autohint=true";
+static char *font = "JetBrains Mono Nerd Font:size=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Ubuntu Mono Nerd Font:pixelsize=12:antialias=true:autohint=true",
+	"Symbola:size=12:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
