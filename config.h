@@ -6,10 +6,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono Nerd Font:pixelsize=12:antialias=true:autohint=true";
+static char *font = "JetBrains Mono Nerd Font:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Symbola:pixelsize=11:antialias=true:autohint=true",
+	"Symbola:pixelsize=14:antialias=true:autohint=true",
 };
 
 static int borderpx = 5;
@@ -97,15 +97,6 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 float alpha = 0.8;
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
