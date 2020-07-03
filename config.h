@@ -1,4 +1,5 @@
 #include "colors.h"
+
 /* See LICENSE file for copyright and license details. */
 
 /*
@@ -12,7 +13,7 @@ static char *font2[] = {
 	"Symbola:pixelsize=14:antialias=true:autohint=true",
 };
 
-static int borderpx = 5;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -48,6 +49,10 @@ static unsigned int tripleclicktimeout = 600;
 
 /* alt screens */
 int allowaltscreen = 1;
+
+/* allow certain non-interactive (insecure) window operations such as:
+   setting the clipboard text */
+int allowwindowops = 0;
 
 /*
  * draw latency range in ms - from new content/keypress/etc until drawing.
@@ -99,13 +104,20 @@ unsigned int tabspaces = 8;
 float alpha = 0.8;
 
 /*
- * Default shape of cursor
- * 2: Block ("█")
- * 4: Underline ("_")
- * 6: Bar ("|")
- * 7: Snowman ("☃")
+ * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81
+ * Default style of cursor
+ * 0: Blinking block
+ * 1: Blinking block (default)
+ * 2: Steady block ("█")
+ * 3: Blinking underline
+ * 4: Steady underline ("_")
+ * 5: Blinking bar
+ * 6: Steady bar ("|")
+ * 7: Blinking st cursor
+ * 8: Steady st cursor
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorstyle = 6;
+static Rune stcursor = 0x2603; /* snowman (U+2603) */
 
 /*
  * Default columns and rows numbers

@@ -28,6 +28,7 @@ static const char *colorname[] = {
 	"black",
 };
 
+
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
