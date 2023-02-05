@@ -2017,12 +2017,13 @@ strhandle(void)
 			/* FALLTHROUGH */
 		case 104: /* color reset */
 			j = (narg > 1) ? atoi(strescseq.args[1]) : -1;
-
 			if (p && !strcmp(p, "?"))
 				osc4_color_response(j);
 			else if (xsetcolorname(j, p)) {
-				if (par == 104 && narg <= 1)
+				if (par == 104 && narg <= 1) {
+					xloadcols();
 					return; /* color reset without parameter */
+				}
 				fprintf(stderr, "erresc: invalid color j=%d, p=%s\n",
 				        j, p ? p : "(null)");
 			} else {
